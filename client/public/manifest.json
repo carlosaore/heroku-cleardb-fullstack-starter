@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Starter Webapp",
+  "name": "Starter Webapp (SERN) for Heroku",
   "icons": [
     {
       "src": "favicon.ico",

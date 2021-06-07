@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# React Express MySQL Starter Pack
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Create full stack apps with React and Express. Run your client and server with a single command.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Quick Start
 
-### `npm start`
+``` bash
+# Install dependencies for server
+npm install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Install dependencies for client
+npm run client-install
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Run the client & server with concurrently 
+npm run dev
 
-### `npm test`
+# Run the Express server only
+npm run server
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Run the React client only
+npm run client
 
-### `npm run build`
+# Server runs on http://localhost:5000 and client on http://localhost:3000
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to use this template
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Fork it.
+2. Make sure that you have:
+    - [installed `concurrently` globally](https://www.npmjs.com/package/concurrently)
+    - that you have a Heroku account
+    - that you have [installed the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) (and logged in).
+3. [Create a new Heroku app using the CLI from the app's root directory.](https://devcenter.heroku.com/articles/git#for-a-new-heroku-app)
+4. [Install ClearDB in your Heroku app](https://devcenter.heroku.com/articles/cleardb)
+5. [Create a `.env` file in the app's root directory](https://devcenter.heroku.com/articles/config-vars) like this:
+    ```
+    DB_HOST=XXXXXXX
+    DB_USER=XXXXXXXX
+    DB_PASSWORD=XXXXXXXX
+    DB_DATABASE=XXXXXXXX
+    ```
+    See the link in step 4 for guidance on how to find those values.
+6. [Set up you Config (aka env) variables in Heroku](https://devcenter.heroku.com/articles/config-vars) like this:
+    ```
+    DB_HOST=XXXXXXX
+    DB_USER=XXXXXXXX
+    DB_PASSWORD=XXXXXXXX
+    DB_DATABASE=XXXXXXXX
+   ```
+    See the link in step 4 for guidance on how to find those values.
+7. Adapt the code to your need.
+8. Test your code by running `npm run dev` in your terminal.
+9. [After committing any changes to the main branch, you can deploy them by doing `git push heroku main` from your terminal](https://devcenter.heroku.com/articles/git#deploying-code).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## App Info
 
-### `npm run eject`
+### Author
+Carlos Orellana
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Version
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1.0.0
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## About the code
+The purpose of this template is to be an educational tool for students learning web development.
+It offers both the backend and frontend from a single place for small projects and quick deploys to Heroku.
+It's a fullstack application using the SERN stack.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Backend
 
-## Learn More
+Created with express with a connection to a MySQL database that can also be hosted in Heroku.
+It offers 2 endpoints:
+- `/api`
+  
+   A GET request to this endpoint returns "API is running" if the server is up.
+- `/api/users`
+    
+    A GET request to this endpoint returns the contents of a table named "users" that is stored in the database (`SELECT * FROM users;`)
+    You can use the code provided in `/src/routes/usersRouter.js` to create your own MySQL query and route.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Frontend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The frontend was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A bare-bones routing system is already included using React Router.
 
-### Code Splitting
+The styling is done with styled-components, with globalStyles and a theme.js files.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Directories for atomic design architecture are provided.
 
-### Analyzing the Bundle Size
+Two different context are provided:
+- one for to be fetched from one or many APIs
+- another one for general purpose data and states.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+A textData.js is also provided. See `/client/src/components/pages/Home.js` for an example on how to use it.
 
-### Making a Progressive Web App
+### License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the MIT License
 
-### Advanced Configuration
+### Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contact me for guidance on how to contribute.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

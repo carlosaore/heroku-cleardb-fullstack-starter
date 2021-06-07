@@ -1,0 +1,42 @@
+{
+  "name": "heroku-cleardb-fullstack-starter",
+  "version": "1.0.0",
+  "description": "Starter files for fullstack apps using the SERN stack",
+  "main": "src/index.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node src/index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"nodemon src/index.js\" \"npm start --prefix client\"",
+    "dev-api": "nodemon src/index.js",
+    "test": "echo \"Errorg: no test specified\" && exit 1",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=FALSE npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosaore/heroku-cleardb-fullstack-starter.git"
+  },
+  "keywords": [
+    "fullstack",
+    "SERN",
+    "starter",
+    "React",
+    "Node",
+    "MySQL",
+    "Heroku"
+  ],
+  "author": "Carlos Orellana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosaore/heroku-cleardb-fullstack-starter/issues"
+  },
+  "homepage": "https://github.com/carlosaore/heroku-cleardb-fullstack-starter#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

@@ -25,7 +25,7 @@ const Home = () => {
 
 			{APIContext.usersLoaded
 				? <ol>
-					{APIContext.users.map(element => (
+					{APIContext.users.map((element) => (
 						<li key={nanoid()}>
 								<span>
 									{`NAME: ${element.user_name} | `}

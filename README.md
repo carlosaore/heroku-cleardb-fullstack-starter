@@ -19,7 +19,7 @@
   </a>
 </p>
 
-> Create full stack apps with React and Express. Run your client and server with a single command.
+> Create full stack apps with React and Express.<br>Run your client and server with a single command.
 
 ### 🏠 [Homepage](https://github.com/carlosaore/heroku-cleardb-fullstack-starter#readme)
 

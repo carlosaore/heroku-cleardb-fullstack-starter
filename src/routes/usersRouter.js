@@ -2,10 +2,10 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../conf');
 
-router.get('/', function (req, res) {
+router.get('/', (req, res) => {
 
 	//Getting a connection from the pool
-	pool.getConnection(function(err, connection) {
+	pool.getConnection((err, connection) => {
 		// Not connected!
 		if (err) console.error(err);
 

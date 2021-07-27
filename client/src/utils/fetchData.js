@@ -1,5 +1,9 @@
-// helper function to fetch an API and store the result in a state
-// and a boolean to tell if we have loaded the data in another state
+/**
+ * Fetches an API and stores the result in a state together with boolean to flag the loading status as completed
+ * @param url {string} The URL to fetch
+ * @param setState {function} Callback function that updates a state to store the result of the fetch
+ * @param setLoaded {Function} Callback function that updates a state as "true" after the fetch result is stored
+ */
 const fetchData = (url, setState, setLoaded) => {
 	fetch(url).then((response) => {
 		// Shorthand to check for an HTTP 2xx response status.
@@ -14,6 +18,7 @@ const fetchData = (url, setState, setLoaded) => {
 		return response.json();
 	}).then((json) => {
 		setState(json);
+	}).then(() => {
 		setLoaded(true);
 	}).catch((error) => {
 		console.error('Request failed:', error.message);

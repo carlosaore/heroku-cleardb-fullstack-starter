@@ -1,9 +1,7 @@
 <h1 align="center">heroku-cleardb-fullstack-starter</h1>
 <p>
   <img alt="JavaScript" src="https://github.com/aleen42/badges/raw/master/src/javascript.svg" />
-  <img alt="Node" src="https://github.com/aleen42/badges/raw/master/src/nnode.svg" />
-  <img alt="" src="" />
-  <img alt="" src="" />
+  <img alt="Node" src="https://badges.aleen42.com/src/node.svg"/>
   <img alt="React" src="https://github.com/aleen42/badges/raw/master/src/react.svg" />
   <img alt="React Router" src="https://github.com/aleen42/badges/raw/master/src/router.svg" />
   <br />

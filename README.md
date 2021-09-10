@@ -53,7 +53,7 @@ npm run client
 1. Fork it, then use your forked copy as a template when creating a new repository.
 2. Make sure that you have:
     - [installed `concurrently` globally](https://www.npmjs.com/package/concurrently)
-    - a Heroku account
+    - a Heroku account ([verified](https://devcenter.heroku.com/articles/account-verification))
     - [installed the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) (and logged in)
 3. Clone your new repository into your machine so you can work on it.
 4. [Create a new Heroku app using the CLI from the app's root directory.](https://devcenter.heroku.com/articles/git#for-a-new-heroku-app)

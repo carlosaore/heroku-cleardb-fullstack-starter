@@ -55,9 +55,10 @@ npm run client
     - [installed `concurrently` globally](https://www.npmjs.com/package/concurrently)
     - a Heroku account
     - [installed the Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) (and logged in)
-3. [Create a new Heroku app using the CLI from the app's root directory.](https://devcenter.heroku.com/articles/git#for-a-new-heroku-app)
-4. [Install ClearDB in your Heroku app](https://devcenter.heroku.com/articles/cleardb)
-5. [Create a `.env` file in the app's root directory](https://devcenter.heroku.com/articles/config-vars) like this:
+3. Clone your new repository into your machine so you can work on it.
+4. [Create a new Heroku app using the CLI from the app's root directory.](https://devcenter.heroku.com/articles/git#for-a-new-heroku-app)
+5. [Install ClearDB in your Heroku app](https://devcenter.heroku.com/articles/cleardb)
+6. [Create a `.env` file in the app's root directory](https://devcenter.heroku.com/articles/config-vars) like this:
     ```js
     DB_HOST=XXXXXX
     DB_USER=XXXXXX
@@ -65,7 +66,7 @@ npm run client
     DB_DATABASE=XXXXXX
     ```
    See the link in step 4 for guidance on how to find those values.
-6. [Set up you Config (aka env) variables in Heroku](https://devcenter.heroku.com/articles/config-vars) like this:
+7. [Set up you Config (aka env) variables in Heroku](https://devcenter.heroku.com/articles/config-vars) like this:
     ```js
     DB_HOST=XXXXXX
     DB_USER=XXXXXX
@@ -73,9 +74,9 @@ npm run client
     DB_DATABASE=XXXXXX
    ```
    See the link in step 4 for guidance on how to find those values.
-7. Adapt the code to your need.
-8. Test your code by running `npm run dev` in your terminal.
-9. [After committing any changes to the main branch, you can deploy them by doing `git push heroku main` from your terminal](https://devcenter.heroku.com/articles/git#deploying-code).
+8. Adapt the code to your need.
+9. Test your code by running `npm run dev` in your terminal.
+10. [After committing any changes to the main branch, you can deploy them by doing `git push heroku main` from your terminal](https://devcenter.heroku.com/articles/git#deploying-code).
 
 ## :nut_and_bolt: About the code
 The purpose of this template is to be an educational tool for students learning web development.

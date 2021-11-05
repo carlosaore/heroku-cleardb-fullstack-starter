@@ -65,7 +65,7 @@ npm run client
     DB_PASSWORD=XXXXXX
     DB_DATABASE=XXXXXX
     ```
-   See the link in step 4 for guidance on how to find those values.
+   See the link in step 5 for guidance on how to find those values.
 7. [Set up you Config (aka env) variables in Heroku](https://devcenter.heroku.com/articles/config-vars) like this:
     ```js
     DB_HOST=XXXXXX

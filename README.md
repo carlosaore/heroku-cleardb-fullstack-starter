@@ -5,7 +5,7 @@
   <img alt="React" src="https://github.com/aleen42/badges/raw/master/src/react.svg" />
   <img alt="React Router" src="https://github.com/aleen42/badges/raw/master/src/router.svg" />
   <br />
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.1.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/carlosaore/heroku-cleardb-fullstack-starter#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>

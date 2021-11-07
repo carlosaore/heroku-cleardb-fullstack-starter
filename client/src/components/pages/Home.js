@@ -1,13 +1,15 @@
-import { useContext } from 'react';
-import { context } from "../../context/APIProvider";
+import {useContext} from 'react';
+import {context} from "../../context/APIProvider";
 import {nanoid} from "nanoid";
 import H2 from "../atoms/H2";
 import Section from "../molecules/Section";
 import textData from "../../data/textData";
 
-const Home = () => {
+const Home = (props) => {
 
 	const APIContext = useContext(context);
+
+	console.log(props.history)
 
 	return (
 		<main>
@@ -23,12 +25,12 @@ const Home = () => {
 				text={textData.aboutSection2.text}
 			/>
 
-			{APIContext.usersLoaded
+			{APIContext.usersIsFetched
 				? <ol>
-					{APIContext.users.map((element) => (
+					{APIContext.usersData.data.map((element) => (
 						<li key={nanoid()}>
 								<span>
-									{`NAME: ${element.user_name} | `}
+									{`NAME: ${element.user_name} - `}
 								</span>
 							<span>
 									{`EMAIL: ${element.user_email}`}

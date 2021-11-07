@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import H3 from "../atoms/H3";
 import P from "../atoms/P";
 import Nav from "../atoms/Nav";

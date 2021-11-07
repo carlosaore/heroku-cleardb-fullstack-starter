@@ -4,24 +4,30 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import APIProvider from "./context/APIProvider";
 import MyProvider from "./context/MyProvider";
-import { BrowserRouter } from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 import Theme from "./styles/Theme";
-import GlobalStyle from "./styles/globalStyles";
+import GlobalStyle from "./styles/globalStyle";
+import {QueryClient, QueryClientProvider} from 'react-query';
+import {createBrowserHistory as history} from "history";
+
+const queryClient = new QueryClient();
 
 ReactDOM.render(
-    <React.StrictMode>
-        <MyProvider>
-            <APIProvider>
-                <BrowserRouter>
-                    <Theme>
-                        <GlobalStyle />
-                        <App />
-                    </Theme>
-                </BrowserRouter>
-            </APIProvider>
-        </MyProvider>
-    </React.StrictMode>,
-    document.getElementById('root')
+	<React.StrictMode>
+		<QueryClientProvider client={queryClient}>
+			<MyProvider>
+				<APIProvider>
+					<BrowserRouter history={history}>
+						<Theme>
+							<GlobalStyle/>
+							<App/>
+						</Theme>
+					</BrowserRouter>
+				</APIProvider>
+			</MyProvider>
+		</QueryClientProvider>
+	</React.StrictMode>,
+	document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

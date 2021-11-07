@@ -73,12 +73,14 @@ npm run client
     DB_PASSWORD=XXXXXX
     DB_DATABASE=XXXXXX
    ```
-   See the link in step 4 for guidance on how to find those values.
+   See the link in step 5 for guidance on how to find those values.
 8. Adapt the code to your need.
 9. Test your code by running `npm run dev` in your terminal.
-10. [After committing any changes to the main branch, you can deploy them by doing `git push heroku main` from your terminal](https://devcenter.heroku.com/articles/git#deploying-code).
+10. [After committing any changes to the main branch, you can deploy them by doing `git push heroku main` from your terminal](https://devcenter.heroku.com/articles/git#deploying-code)
+    .
 
 ## :nut_and_bolt: About the code
+
 The purpose of this template is to be an educational tool for students learning web development.
 
 It's a fullstack application using the SERN stack.
@@ -87,14 +89,15 @@ It offers both the backend and frontend from a single place for small projects a
 
 ### Backend
 
-Created with Express with a connection to a MySQL database, which can also be hosted in Heroku.
-It offers 2 endpoints:
+Created with Express with a connection to a MySQL database, which can also be hosted in Heroku. It offers 2 endpoints:
+
 - `/api`
 
   A GET request to this endpoint returns `"API is running"` if the server is up.
 - `/api/users`
 
-  A GET request to this endpoint returns the contents of a table named "users" that is stored in the database (`SELECT * FROM users;`)
+  A GET request to this endpoint returns the contents of a table named "users" that is stored in the
+  database (`SELECT * FROM users;`)
   You can use the code provided in `/src/routes/usersRouter.js` to create your own MySQL query and route.
 
 ### Frontend
@@ -108,9 +111,10 @@ The styling is done with styled-components, with a globalStyles and a theme.js f
 Directories for [atomic design](https://bradfrost.com/blog/post/atomic-web-design/) architecture are also provided.
 
 Two different context are provided:
+
 - one for storing and providing data fetched from one (or many) APIs
-- another one for general purpose data and states.
-You can adapt them to suit your needs or use the code as a template to create your own contexts.
+- another one for general purpose data and states. You can adapt them to suit your needs or use the code as a template
+  to create your own contexts.
 
 A textData.js is also provided. See `/client/src/components/pages/Home.js` for an example on how to use it.
 

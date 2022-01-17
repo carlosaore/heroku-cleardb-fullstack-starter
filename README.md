@@ -3,7 +3,7 @@
   <img alt="JavaScript" src="https://github.com/aleen42/badges/raw/master/src/javascript.svg" />
   <img alt="Node" src="https://badges.aleen42.com/src/node.svg"/>
   <img alt="React" src="https://github.com/aleen42/badges/raw/master/src/react.svg" />
-  <img alt="React Router" src="https://github.com/aleen42/badges/raw/master/src/router.svg" />
+  <img alt="React Router" src="https://raw.githubusercontent.com/aleen42/badges/master/src/react-router.svg" />
   <br />
   <img alt="Version" src="https://img.shields.io/badge/version-1.1.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/carlosaore/heroku-cleardb-fullstack-starter#readme" target="_blank">
